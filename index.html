@@ -123,6 +123,18 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .project-icon {
+        text-decoration: none; /* Removes underline */
+        margin-left: 8px;
+        font-size: 1.2rem;
+        color: inherit; /* Keeps the same text color */
+        transition: color 0.3s ease;
+         }
+
+        .project-icon:hover {
+            color: #2b6cb0;
+         }
+
     </style>
 </head>
 <body>
@@ -162,25 +174,43 @@
 
         <section id="projects" class="section projects">
             <h2>Projects</h2>
+            
             <div class="project">
-                <h3>Flight Booking System</h3>
-                <p>A full-stack website for airplane ticket booking with seat selection, built using Node.js, MySQL, and modern web technologies.</p>
+                <h3>Online Store 
+                    <a href="#" class="project-icon" target="_blank" title="View Project">🔗</a>
+                </h3>
+                <p>A small online store website is a simple yet efficient platform designed to showcase and sell products digitally. It typically includes essential features like a home page, product catalog, shopping cart, and checkout system.</p>
             </div>
+        
             <div class="project">
-                <h3>Movie Ticket Reservation</h3>
-                <p>Designed a Java program to manage seat bookings for movies using object-oriented principles and a user-friendly interface.</p>
+                <h3>Bank Management 
+                    <a href="#" class="project-icon" target="_blank" title="View Project">🔗</a>
+                </h3>
+                <p>A Bank Management System is a digital platform that enables users to send and receive money securely between accounts. It provides essential banking functionalities such as account management, fund transfers, transaction history, and balance inquiries.</p>
             </div>
+        
             <div class="project">
-                <h3>Image Segmentation and Object Detection</h3>
+                <h3>Image Segmentation and Object Detection 
+                    <a href="#" class="project-icon" target="_blank" title="View Project">🔗</a>
+                </h3>
                 <p>Developed an advanced image segmentation system using YOLOv3 and Pointrend for precise object detection and classification.</p>
             </div>
+        
+            <div class="project">
+                <h3>Flight Booking System 
+                    <a href="#" class="project-icon" target="_blank" title="View Project">🔗</a>
+                </h3>
+                <p>A full-stack website for airplane ticket booking with seat selection, built using Node.js, MySQL, and modern web technologies.</p>
+            </div>
+        
+            <div class="project">
+                <h3>Movie Ticket Reservation 
+                    <a href="#" class="project-icon" target="_blank" title="View Project">🔗</a>
+                </h3>
+                <p>Designed a Java program to manage seat bookings for movies using object-oriented principles and a user-friendly interface.</p>
+            </div>
         </section>
-
-        <section id="contact" class="section contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:padalapranavsai@gmail.com">padalapranavsai@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/pranavsai-padala">linkedin.com/in/pranavsai-padala</a></p>
-        </section>
+        
     </div>
 
     <footer>
