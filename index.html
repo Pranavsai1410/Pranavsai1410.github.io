@@ -1,0 +1,1281 @@
+<style>
+  /* Assuming original content of assets/css/main.css is included here, followed by the consolidated inline styles */
+
+/* Original inline styles from <head> */
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.section-title p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.about .content {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.about .content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.about .content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.about .content .about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+.about .content .about-description a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.about .content .about-description a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+#education {
+  padding: 20px 10px;
+  position: relative;
+}
+.education-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #2a2a2a;
+}
+.section-number {
+  color: #666;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.section-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-left: 10px;
+}
+.education-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.education-item:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+.institution-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.institution-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.education-content {
+  flex: 1;
+  margin-right: 20px;
+}
+.degree-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #2a2a2a;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.external-link {
+  margin-left: 5px;
+  color: #666;
+  text-decoration: none;
+  font-size: 16px;
+}
+.institution-name {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-family: 'Courier New', monospace;
+}
+.description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+.education-meta {
+  text-align: right;
+}
+.year {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.grade {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+.logo-anurag {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+.logo-johnson {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+.logo-sarathi {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+#skills {
+  padding: 20px 10px;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.skills-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 20px;
+}
+.skill-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-color: #d0d0d0;
+}
+.skill-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-item {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.skill-item:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+  color: #000;
+  transform: scale(1.05);
+}
+.skill-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.skill-item::before {
+  content: '';
+  /* Placeholder for logo; replace with actual image path */
+}
+
+/* Consolidated Projects Section Styles */
+#projects {
+  padding: 20px 10px;
+  position: relative;
+  background-color: #fff;
+}
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header {
+  margin-bottom: 40px;
+}
+.section-number {
+  color: #3b82f6;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 12px;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(to right, #cbd5e1, transparent);
+  transform: translateY(-50%);
+}
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.6;
+}
+.project-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.project-info {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.project-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f172a;
+}
+.project-type {
+  color: #3b82f6;
+  font-size: 14px;
+  font-weight: 500;
+}
+.project-indicator {
+  width: 6px;
+  height: 6px;
+  background: #10b981;
+  border-radius: 50%;
+  margin-left: auto;
+}
+.project-description {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.project-metrics {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.project-metrics li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #475569;
+}
+.project-metrics li::before {
+  content: '•';
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 16px;
+}
+.tech-stack {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.tech-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1e40af;
+}
+.tech-badge.react { background: rgba(97, 218, 251, 0.1); border-color: rgba(97, 218, 251, 0.3); color: #0369a1; }
+.tech-badge.javascript { background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.3); color: #92400e; }
+.tech-badge.html { background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3); color: #dc2626; }
+.tech-badge.css { background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); color: #1d4ed8; }
+.project-actions {
+  display: flex;
+  gap: 12px;
+}
+.action-btn {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: #475569;
+}
+.action-btn:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #1d4ed8;
+  transform: translateY(-2px);
+}
+.project-visual {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+.project-image {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.promo-content {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+.promo-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.promo-subtitle {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+.extension-logo {
+  background: rgba(139, 92, 246, 0.9);
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.story-section {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+.story-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Certifications Section Styles */
+#certifications {
+  padding: 20px 10px;
+  position: relative;
+  background: #fff;
+}
+.certifications-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header {
+  margin-bottom: 3rem;
+}
+.section-number {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 1rem;
+}
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.certificate-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.certificate-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.certificate-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.05) 100%);
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+.certificate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #d0d0d0;
+}
+.certificate-card:hover::before {
+  opacity: 0.3;
+}
+.certificate-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 3;
+}
+.certificate-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.certificate-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  line-height: 1.4;
+}
+.certificate-org {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+.certificate-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(59, 130, 246, 0.1);
+  color: #1d4ed8;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  z-index: 3;
+}
+.show-more-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+.show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #2a2a2a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.show-more-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.show-more-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+}
+.show-more-btn > * {
+  position: relative;
+  z-index: 3;
+}
+.show-more-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  background: rgba(59, 130, 246, 0.1);
+}
+.show-more-icon {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 10px;
+  }
+  .skill-card {
+    padding: 20px;
+  }
+  .skill-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .skill-item {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  .skill-logo {
+    width: 18px;
+    height: 18px;
+  }
+  .project-showcase {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .section-title::after {
+    display: none;
+  }
+  body {
+    padding: 40px 20px;
+  }
+  .project-image {
+    height: 200px;
+  }
+  .swiper-slide img {
+    height: 200px;
+  }
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .certificate-card {
+    padding: 1.5rem;
+  }
+  .about .content {
+    padding: 16px;
+  }
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pranavsai Padala - Portfolio</title>
+  <meta content="Computer Science student skilled in Java, Python, and web development, passionate about building scalable, AI-driven solutions." name="description">
+  <meta content="Pranavsai Padala, Software Developer, Frontend Developer" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#education"><i class="bi bi-book navicon"></i><span>Education</span></a></li>
+        <li><a href="#skills"><i class="bi bi-tools navicon"></i><span>Skills</span></a></li>
+        <li><a href="#projects"><i class="bi bi-gear navicon"></i><span>Projects</span></a></li>
+        <li><a href="#certifications"><i class="bi bi-award navicon"></i><span>Certifications</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+      <img src="assets/img/Screenshot 2025-08-18 183152.png" alt="">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 text-center">
+            <h2 style="color: black">Pranavsai Padala</h2>
+            <p>I'm a <span class="typed" data-typed-items="Software Developer, Frontend Developer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/pranavsai-padala"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/Pranavsai1410"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>A brief overview of my skills and passion.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-4">
+            <img src="assets/img/My-img.jpg" class="img-fluid rounded" alt="Profile Image">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Software & Frontend Developer</h2>
+            <p class="about-description">I’m a Computer Science with a strong passion for developing scalable, AI-driven solutions. Skilled in Java, Python, and web development, I enjoy building innovative applications that address real-world challenges. You can reach me at padalapranavsai@gmail.com, and explore more of my work on my portfolio.>Pranavsai1410.github.io</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Education</h2>
+        <p>My academic journey.</p>
+      </div>
+      <div class="container education-section" data-aos="fade-up" data-aos-delay="100">
+        <div class="education-item">
+          <div class="institution-logo logo-anurag">
+            <img src="assets/img/griet-logo.png">
+          </div>
+          <div class="education-content">
+            <h3 class="degree-title">
+              B.Tech in Computer Science & Engineering
+              <a href="#" class="external-link">↗</a>
+            </h3>
+            <div>Gokaraju Rangaraju Institute of Engineering and Technology</div>
+            <p class="description">Hands-on projects in algorithms and system design.</p>
+          </div>
+          <div class="education-meta">
+            <div class="year">2022 – Present</div>
+            <div class="grade">8.9 CGPA (S-7)</div>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="institution-logo logo-johnson">
+            <img src="assets/img/narayana-clg.jpeg">
+          </div>
+          <div class="education-content">
+            <h3 class="degree-title">
+              Higher Secondary Education
+              <a href="#" class="external-link">↗</a>
+            </h3>
+            <div>Narayana Junior College</div>
+            <p class="description">Interest in technology and problem-solving.</p>
+          </div>
+          <div class="education-meta">
+            <div class="year">2022</div>
+            <div class="grade">91.1%</div>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="institution-logo logo-sarathi">
+            <img src="assets/img/Vignan-botree.png">
+          </div>
+          <div class="education-content">
+            <h3 class="degree-title">
+              Secondary School (X, CBSE)
+              <a href="#" class="external-link">↗</a>
+            </h3>
+            <div>Vignan Bo Tree School</div>
+            <p class="description">Foundation in learning and logic.</p>
+          </div>
+          <div class="education-meta">
+            <div class="year">2020</div>
+            <div class="grade">86.6%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>My technical expertise.</p>
+      </div>
+      <div class="container skills-section" data-aos="fade-up" data-aos-delay="100">
+        <!-- Languages Card -->
+        <div class="skill-card">
+          <h2 class="skill-title">Languages</h2>
+          <div class="skills-grid">
+            <span class="skill-item" data-skill="Java"><img src="assets/img/java.png" class="skill-logo">Java</span>
+            <span class="skill-item" data-skill="Python"><img src="assets/img/python.png" class="skill-logo">Python</span>
+            <span class="skill-item" data-skill="JavaScript"><img src="assets/img/JavaScript-logo.png" class="skill-logo">JavaScript</span>
+            <span class="skill-item" data-skill="C"><img src="assets/img/c-logo.png" class="skill-logo">C</span>
+            <span class="skill-item" data-skill="HTML"><img src="assets/img/html.jpeg" class="skill-logo">HTML</span>
+            <span class="skill-item" data-skill="CSS"><img src="assets/img/css-logo.png" class="skill-logo">CSS</span>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries Card -->
+        <div class="skill-card">
+          <h2 class="skill-title">Frameworks & Libraries</h2>
+          <div class="skills-grid">
+            <span class="skill-item" data-skill="React"><img src="assets/img/React-icon.svg.png" class="skill-logo">React</span>
+            <span class="skill-item" data-skill="Node.js"><img src="assets/img/nodejs-logo.jpg" class="skill-logo">Node.js</span>
+            <span class="skill-item" data-skill="Tailwind CSS"><img src="assets/img/Tailwind_CSS_Logo.svg.png" class="skill-logo">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Databases Card -->
+        <div class="skill-card">
+          <h2 class="skill-title">Databases</h2>
+          <div class="skills-grid">
+            <span class="skill-item" data-skill="MongoDB"><img src="assets/img/mongo-db.png" class="skill-logo">MongoDB</span>
+            <span class="skill-item" data-skill="MySQL"><img src="assets/img/mysql.png" class="skill-logo">MySQL</span>
+            <span class="skill-item" data-skill="Supabase"><img src="assets/img/supabase.png" class="skill-logo">Supabase</span>
+          </div>
+        </div>
+
+        <!-- Development Tools Card -->
+        <div class="skill-card">
+          <h2 class="skill-title">Development Tools</h2>
+          <div class="skills-grid">
+            <span class="skill-item" data-skill="VS Code"><img src="assets/img/vscode.jpeg" class="skill-logo">VS Code</span>
+            <span class="skill-item" data-skill="IntelliJ IDEA"><img src="assets/img/inteligi.jpeg" class="skill-logo">IntelliJ IDEA</span>
+            <span class="skill-item" data-skill="Git"><img src="assets/img/git.png" class="skill-logo">Git</span>
+            <span class="skill-item" data-skill="GitHub"><img src="assets/img/github.jpg" class="skill-logo">GitHub</span>
+            <span class="skill-item" data-skill="Postman"><img src="assets/img/postman.png" class="skill-logo">Postman</span>
+          </div>
+        </div>
+
+        <!-- CI/CD & Deployment Card -->
+        <div class="skill-card">
+          <h2 class="skill-title">CI/CD & Deployment</h2>
+          <div class="skills-grid">
+            <span class="skill-item" data-skill="Docker"><img src="assets/img/docker.png" class="skill-logo">Docker</span>
+            <span class="skill-item" data-skill="Vercel"><img src="assets/img/vercel.png" class="skill-logo">Vercel</span>
+            <span class="skill-item" data-skill="Netlify"><img src="assets/img/netlify.png" class="skill-logo">Netlify</span>
+          </div>
+        </div>
+
+        <!-- Embedded Systems Card -->
+        <div class="skill-card">
+          <h2 class="skill-title">Embedded Systems</h2>
+          <div class="skills-grid">
+            <span class="skill-item" data-skill="Raspberry Pi"><img src="assets/img/rasberripi.png" class="skill-logo">Raspberry Pi</span>
+            <span class="skill-item" data-skill="Arduino"><img src="assets/img/arduino.jpg" class="skill-logo">Arduino</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="projects-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Real-world applications built with thoughtful design, full-stack technologies, and measurable impact.
+          </p>
+        </div>
+
+        <div class="project-showcase">
+          <div class="project-info">
+            <div class="project-header">
+              <h3 class="project-title">EduMind</h3>
+              <span class="project-type">AI-Powered Study Companion</span>
+              <div class="project-indicator"></div>
+            </div>
+            
+            <p class="project-description">
+              Developed a web-based AI-powered study platform with a React frontend and FastAPI backend, enabling real-time explanations, quiz generation, and note summarization using self-hosted LLM (Mistral via Ollama).
+            </p>
+            
+            <ul class="project-metrics">
+              <li>Integrated FAISS/ChromaDB for efficient study material retrieval</li>
+              <li>Privacy-focused, adaptive learning experiences</li>
+            </ul>
+            
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge react">ReactJS</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">LLMs</span>
+            </div>
+            
+            <div class="project-actions">
+              <a href="https://github.com/Pranavsai1410/EduMind" class="action-btn" title="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="action-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15,3 21,3 21,9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-image">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/edumind1.png" alt="EduMind Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/edumind2.png" alt="EduMind Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/edumind3.png" alt="EduMind Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/edumind4.png" alt="EduMind Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/edumind5.png" alt="EduMind Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/edumind6.png" alt="EduMind Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/edumind7.png" alt="EduMind Image 3">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase">
+          <div class="project-info">
+            <div class="project-header">
+              <h3 class="project-title">Kattha</h3>
+              <span class="project-type">Digital Ledger Application</span>
+              <div class="project-indicator"></div>
+            </div>
+            
+            <p class="project-description">
+              Created a simple and modern expense tracking app inspired by traditional Indian ledger books (khata), with a calendar-based interface.
+            </p>
+            
+            <ul class="project-metrics">
+              <li>Added features like daily entry tracking</li>
+              <li>Charts for expense analysis</li>
+              <li>Local data storage without login</li>
+            </ul>
+            
+            <div class="tech-stack">
+              <span class="tech-badge react">ReactJS</span>
+              <span class="tech-badge">TypeScript</span>
+            </div>
+            
+            <div class="project-actions">
+              <a href="https://github.com/Pranavsai1410/Kattha" class="action-btn" title="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="action-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15,3 21,3 21,9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-image">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/kattha1.png" alt="Kattha Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/kattha2.png" alt="Kattha Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/kattha3.png" alt="Kattha Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/kattha4.png" alt="Kattha Image 3">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase">
+          <div class="project-info">
+            <div class="project-header">
+              <h3 class="project-title">Image Segmentation and Object Detection System</h3>
+              <span class="project-type">ML Project</span>
+              <div class="project-indicator"></div>
+            </div>
+            
+            <p class="project-description">
+              Developed a high-accuracy system for object detection and segmentation in complex image environments.
+            </p>
+            
+            <ul class="project-metrics">
+              <li>Optimized YOLOv3 and Pointrend models</li>
+              <li>Enhanced boundary delineation through algorithm tuning</li>
+              <li>Implemented scalable data pipelines for real-time processing</li>
+            </ul>
+            
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">YOLOv3</span>
+              <span class="tech-badge">Pointrend</span>
+            </div>
+            
+            <div class="project-actions">
+              <a href="https://github.com/Pranavsai1410/Object-Detection-System" class="action-btn" title="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="action-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15,3 21,3 21,9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-image">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/img-seg1.png" alt="Image Segmentation Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img-seg2.png" alt="Image Segmentation Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img-seg3.png" alt="Image Segmentation Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img-seg4.png" alt="Image Segmentation Image 3">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+      <div class="certifications-section">
+        <div class="section-header">
+          <div class="section-number">05.</div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Professional certifications and achievements that validate my expertise across various technologies and domains.</p>
+        </div>
+
+        <div class="certificates-grid">
+          <a href="#oracle-cert" class="certificate-card">
+            <img src="assets/img/oracle.png" alt="Oracle Certificate" class="certificate-img">
+            <div class="certificate-badge">Verified</div>
+            <div class="certificate-header">
+              <div class="certificate-icon">OCI</div>
+              <div>
+                <div class="certificate-title">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</div>
+                <div class="certificate-org">Oracle</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#mongodb-cert" class="certificate-card">
+            <img src="assets/img/mongodb-cer.png" alt="MongoDB Certificate" class="certificate-img">
+            <div class="certificate-badge">Verified</div>
+            <div class="certificate-header">
+              <div class="certificate-icon">MDB</div>
+              <div>
+                <div class="certificate-title">Introduction to MongoDB</div>
+                <div class="certificate-org">MongoDB University</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#cisco-cert" class="certificate-card">
+            <img src="assets/img/cisco-cer.png" alt="Cisco Certificate" class="certificate-img">
+            <div class="certificate-badge">Verified</div>
+            <div class="certificate-header">
+              <div class="certificate-icon">CSC</div>
+              <div>
+                <div class="certificate-title">Introduction to Cybersecurity</div>
+                <div class="certificate-org">Cisco</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#nptel-cert" class="certificate-card">
+            <img src="assets/img/nptel-cee.png" alt="NPTEL Certificate" class="certificate-img">
+            <div class="certificate-badge">Verified</div>
+            <div class="certificate-header">
+              <div class="certificate-icon">NPT</div>
+              <div>
+                <div class="certificate-title">Data Science for Engineers</div>
+                <div class="certificate-org">NPTEL</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#meta-cert" class="certificate-card">
+            <img src="assets/img/meta-cer.png" alt="Meta Certificate" class="certificate-img">
+            <div class="certificate-badge">Verified</div>
+            <div class="certificate-header">
+              <div class="certificate-icon">META</div>
+              <div>
+                <div class="certificate-title">Programming with JavaScript</div>
+                <div class="certificate-org">Meta</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#ml-cert" class="certificate-card">
+            <img src="assets/img/eict.png" alt="Machine Learning Certificate" class="certificate-img">
+            <div class="certificate-badge">Verified</div>
+            <div class="certificate-header">
+              <div class="certificate-icon">ML</div>
+              <div>
+                <div class="certificate-title">Machine Learning with Python</div>
+                <div class="certificate-org">E & ICT Academy, IIT</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="show-more-section">
+          <a href="https://drive.google.com/drive/u/1/folders/1Uw8o3_Dyc8DPXAUy3ri96nlP6PeOIYVO" class="show-more-btn" target="_blank">
+            <!-- <img src="assets/img/certificates/all-certificates.jpg" alt="All Certificates" class="show-more-img"> -->
+            <div class="show-more-icon">📁</div>
+            View All Certificates
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Pranavsai Padala</h3>
+      <p>Computer Science student passionate about technology.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://linkedin.com/in/pranavsai-padala"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Pranavsai1410"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Pranavsai Padala</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Carousel Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiperConfigs = {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      };
+
+      document.querySelectorAll('.swiper').forEach((element) => {
+        new Swiper(element, swiperConfigs);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
