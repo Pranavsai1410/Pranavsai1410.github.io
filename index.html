@@ -1,6 +1,5 @@
 <style>
   /* Assuming original content of assets/css/main.css is included here, followed by the consolidated inline styles */
-
 /* Original inline styles from <head> */
 .section-title h2 {
   font-size: 2rem;
@@ -237,7 +236,6 @@
   content: '';
   /* Placeholder for logo; replace with actual image path */
 }
-
 /* Consolidated Projects Section Styles */
 #projects {
   padding: 20px 10px;
@@ -455,7 +453,6 @@
   font-weight: 600;
   color: #0f172a;
 }
-
 /* Certifications Section Styles */
 #certifications {
   padding: 20px 10px;
@@ -637,7 +634,104 @@
   color: white;
   font-size: 0.9rem;
 }
-
+/* Experience Section Styles */
+#experience {
+  padding: 20px 10px;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.experience-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+.experience-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  border-color: #d0d0d0;
+}
+.experience-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.experience-content {
+  flex: 1;
+  margin-right: 20px;
+}
+.experience-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #2a2a2a;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.experience-company {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-family: 'Courier New', monospace;
+}
+.experience-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+.experience-duration {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.experience-location {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+.experience-list {
+  margin-top: 12px;
+  padding-left: 20px;
+  list-style: none;
+}
+.experience-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+.experience-list li::before {
+  content: '•';
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
 /* Responsive design */
 @media (max-width: 768px) {
   .skills-section {
@@ -689,40 +783,43 @@
   .about .content {
     padding: 16px;
   }
+  .experience-item {
+    flex-direction: column;
+  }
+  .experience-logo {
+    margin-bottom: 12px;
+  }
+  .experience-meta {
+    text-align: left;
+    margin-top: 12px;
+  }
 }
 </style>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Pranavsai Padala - Portfolio</title>
   <meta content="Computer Science student skilled in Java, Python, and web development, passionate about building scalable, AI-driven solutions." name="description">
   <meta content="Pranavsai Padala, Software Developer, Frontend Developer" name="keywords">
-
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
-
 <body class="index-page">
-
   <header id="header" class="header d-flex flex-column justify-content-center">
     <i class="header-toggle d-xl-none bi bi-list"></i>
     <nav id="navmenu" class="navmenu">
@@ -730,15 +827,14 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#education"><i class="bi bi-book navicon"></i><span>Education</span></a></li>
+        <li><a href="#experience"><i class="bi bi-briefcase navicon"></i><span>Experience</span></a></li>
         <li><a href="#skills"><i class="bi bi-tools navicon"></i><span>Skills</span></a></li>
         <li><a href="#projects"><i class="bi bi-gear navicon"></i><span>Projects</span></a></li>
         <li><a href="#certifications"><i class="bi bi-award navicon"></i><span>Certifications</span></a></li>
       </ul>
     </nav>
   </header>
-
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
       <img src="assets/img/Screenshot 2025-08-18 183152.png" alt="">
@@ -755,7 +851,6 @@
         </div>
       </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
@@ -774,7 +869,6 @@
         </div>
       </div>
     </section>
-
     <!-- Education Section -->
     <section id="education" class="education section">
       <div class="container section-title" data-aos="fade-up">
@@ -795,11 +889,10 @@
             <p class="description">Hands-on projects in algorithms and system design.</p>
           </div>
           <div class="education-meta">
-            <div class="year">2022 – Present</div>
-            <div class="grade">8.9 CGPA (S-7)</div>
+            <div class="year">2022 – 2026</div>
+            <div class="grade">8.9 CGPA</div>
           </div>
         </div>
-
         <div class="education-item">
           <div class="institution-logo logo-johnson">
             <img src="assets/img/narayana-clg.jpeg">
@@ -817,7 +910,6 @@
             <div class="grade">91.1%</div>
           </div>
         </div>
-
         <div class="education-item">
           <div class="institution-logo logo-sarathi">
             <img src="assets/img/Vignan-botree.png">
@@ -837,7 +929,34 @@
         </div>
       </div>
     </section>
-
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experience</h2>
+        <p>My professional journey.</p>
+      </div>
+      <div class="container experience-section" data-aos="fade-up" data-aos-delay="100">
+        <div class="experience-item">
+          <div class="experience-logo">CTS</div>
+          <div class="experience-content">
+            <h3 class="experience-title">
+              Programme Analyst Trainee
+              <a href="#" class="external-link">↗</a>
+            </h3>
+            <div class="experience-company">Cognizant Technology Solutions</div>
+            <ul class="experience-list">
+              <li>Develop practical skills in creating and building scalable web applications through the use of C#, .NET, and ADO.NET technologies, with emphasis on solving real-world problems through APIs.</li>
+              <li>Gain practical exposure working with Microsoft Azure platforms, such as Azure Functions, Logic Apps, Azure Storage Accounts, Azure API Management, and Azure Application Insights.</li>
+              <li>Learn to implement cloud security features through Azure Key Vault and Managed Identity technology.</li>
+            </ul>
+          </div>
+          <div class="experience-meta">
+            <div class="experience-duration">Jan 2026 – May 2026</div>
+            <div class="experience-location">Chennai, Tamil Nadu</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Skills Section -->
     <section id="skills" class="skills section">
       <div class="container section-title" data-aos="fade-up">
@@ -857,7 +976,6 @@
             <span class="skill-item" data-skill="CSS"><img src="assets/img/css-logo.png" class="skill-logo">CSS</span>
           </div>
         </div>
-
         <!-- Frameworks & Libraries Card -->
         <div class="skill-card">
           <h2 class="skill-title">Frameworks & Libraries</h2>
@@ -867,7 +985,6 @@
             <span class="skill-item" data-skill="Tailwind CSS"><img src="assets/img/Tailwind_CSS_Logo.svg.png" class="skill-logo">Tailwind CSS</span>
           </div>
         </div>
-
         <!-- Databases Card -->
         <div class="skill-card">
           <h2 class="skill-title">Databases</h2>
@@ -877,7 +994,6 @@
             <span class="skill-item" data-skill="Supabase"><img src="assets/img/supabase.png" class="skill-logo">Supabase</span>
           </div>
         </div>
-
         <!-- Development Tools Card -->
         <div class="skill-card">
           <h2 class="skill-title">Development Tools</h2>
@@ -889,7 +1005,6 @@
             <span class="skill-item" data-skill="Postman"><img src="assets/img/postman.png" class="skill-logo">Postman</span>
           </div>
         </div>
-
         <!-- CI/CD & Deployment Card -->
         <div class="skill-card">
           <h2 class="skill-title">CI/CD & Deployment</h2>
@@ -899,7 +1014,6 @@
             <span class="skill-item" data-skill="Netlify"><img src="assets/img/netlify.png" class="skill-logo">Netlify</span>
           </div>
         </div>
-
         <!-- Embedded Systems Card -->
         <div class="skill-card">
           <h2 class="skill-title">Embedded Systems</h2>
@@ -910,7 +1024,6 @@
         </div>
       </div>
     </section>
-
     <!-- Projects Section -->
     <section id="projects" class="projects section">
       <div class="projects-container" data-aos="fade-up" data-aos-delay="100">
@@ -920,7 +1033,121 @@
             Real-world applications built with thoughtful design, full-stack technologies, and measurable impact.
           </p>
         </div>
+        <div class="project-showcase">
+          <div class="project-info">
+            <div class="project-header">
+              <h3 class="project-title">Azure Retail Inventory Management System</h3>
+              <span class="project-type">ASP.NET Core, Azure Services</span>
+              <div class="project-indicator"></div>
+            </div>
 
+            <p class="project-description">
+              Designed and developed a cloud-based retail inventory management system using ASP.NET Core Web API hosted on Azure Web App with Azure API Management for secure API routing and authentication.
+            </p>
+
+            <ul class="project-metrics">
+              <li>Implemented product, supplier, sales, and purchase order modules with Azure Table Storage for scalable NoSQL data management and real-time inventory tracking</li>
+              <li>Integrated Azure Service Bus, Logic Apps, and Azure Key Vault to automate low-stock email alerts and securely manage application secrets using Managed Identity</li>
+              <li>Jan 2026 – May 2026</li>
+            </ul>
+
+            <div class="tech-stack">
+              <span class="tech-badge">ASP.NET Core</span>
+              <span class="tech-badge">Azure Web App</span>
+              <span class="tech-badge">Azure API Management</span>
+              <span class="tech-badge">Azure Table Storage</span>
+              <span class="tech-badge">Azure Service Bus</span>
+              <span class="tech-badge">Azure Key Vault</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="action-btn" title="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="action-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15,3 21,3 21,9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-image">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/azure-inventory1.png" alt="Azure Retail Inventory Management System Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/azure-inventory2.png" alt="Azure Retail Inventory Management System Image 2">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-showcase">
+          <div class="project-info">
+            <div class="project-header">
+              <h3 class="project-title">NL2SQL</h3>
+              <span class="project-type">AI Assistant for Natural Language Querying</span>
+              <div class="project-indicator"></div>
+            </div>
+
+            <p class="project-description">
+              Designed and developed an AI-based NL2SQL system that takes natural language queries and executes them on structured data (CSV, Excel) using SQL.
+            </p>
+
+            <ul class="project-metrics">
+              <li>Developed a full-stack web application with an interactive user interface and an LLM-based backend for query processing and data visualization</li>
+              <li>June 2025 – Dec 2025</li>
+            </ul>
+
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">FastAPI</span>
+              <span class="tech-badge react">React</span>
+              <span class="tech-badge">LLMs</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="action-btn" title="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="action-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15,3 21,3 21,9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-image">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/nl2sql1.png" alt="NL2SQL Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/nl2sql2.png" alt="NL2SQL Image 2">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="project-showcase">
           <div class="project-info">
             <div class="project-header">
@@ -928,23 +1155,23 @@
               <span class="project-type">AI-Powered Study Companion</span>
               <div class="project-indicator"></div>
             </div>
-            
+           
             <p class="project-description">
               Developed a web-based AI-powered study platform with a React frontend and FastAPI backend, enabling real-time explanations, quiz generation, and note summarization using self-hosted LLM (Mistral via Ollama).
             </p>
-            
+           
             <ul class="project-metrics">
               <li>Integrated FAISS/ChromaDB for efficient study material retrieval</li>
               <li>Privacy-focused, adaptive learning experiences</li>
             </ul>
-            
+           
             <div class="tech-stack">
               <span class="tech-badge">Python</span>
               <span class="tech-badge react">ReactJS</span>
               <span class="tech-badge">MongoDB</span>
               <span class="tech-badge">LLMs</span>
             </div>
-            
+           
             <div class="project-actions">
               <a href="https://github.com/Pranavsai1410/EduMind" class="action-btn" title="View on GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -992,7 +1219,7 @@
             </div>
           </div>
         </div>
-
+        <!--
         <div class="project-showcase">
           <div class="project-info">
             <div class="project-header">
@@ -1000,22 +1227,22 @@
               <span class="project-type">Digital Ledger Application</span>
               <div class="project-indicator"></div>
             </div>
-            
+
             <p class="project-description">
               Created a simple and modern expense tracking app inspired by traditional Indian ledger books (khata), with a calendar-based interface.
             </p>
-            
+
             <ul class="project-metrics">
               <li>Added features like daily entry tracking</li>
               <li>Charts for expense analysis</li>
               <li>Local data storage without login</li>
             </ul>
-            
+
             <div class="tech-stack">
               <span class="tech-badge react">ReactJS</span>
               <span class="tech-badge">TypeScript</span>
             </div>
-            
+
             <div class="project-actions">
               <a href="https://github.com/Pranavsai1410/Kattha" class="action-btn" title="View on GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -1054,7 +1281,7 @@
             </div>
           </div>
         </div>
-
+        -->
         <div class="project-showcase">
           <div class="project-info">
             <div class="project-header">
@@ -1062,23 +1289,23 @@
               <span class="project-type">ML Project</span>
               <div class="project-indicator"></div>
             </div>
-            
+           
             <p class="project-description">
               Developed a high-accuracy system for object detection and segmentation in complex image environments.
             </p>
-            
+           
             <ul class="project-metrics">
               <li>Optimized YOLOv3 and Pointrend models</li>
               <li>Enhanced boundary delineation through algorithm tuning</li>
               <li>Implemented scalable data pipelines for real-time processing</li>
             </ul>
-            
+           
             <div class="tech-stack">
               <span class="tech-badge">Python</span>
               <span class="tech-badge">YOLOv3</span>
               <span class="tech-badge">Pointrend</span>
             </div>
-            
+           
             <div class="project-actions">
               <a href="https://github.com/Pranavsai1410/Object-Detection-System" class="action-btn" title="View on GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -1119,7 +1346,6 @@
         </div>
       </div>
     </section>
-
     <!-- Certifications Section -->
     <section id="certifications" class="certifications section">
       <div class="certifications-section">
@@ -1127,7 +1353,6 @@
           <h2 class="section-title">Certifications</h2>
           <p class="section-subtitle">Professional certifications and achievements that validate my expertise across various technologies and domains.</p>
         </div>
-
         <div class="certificates-grid">
           <a href="#oracle-cert" class="certificate-card">
             <img src="assets/img/oracle.png" alt="Oracle Certificate" class="certificate-img">
@@ -1140,7 +1365,6 @@
               </div>
             </div>
           </a>
-
           <a href="#mongodb-cert" class="certificate-card">
             <img src="assets/img/mongodb-cer.png" alt="MongoDB Certificate" class="certificate-img">
             <div class="certificate-badge">Verified</div>
@@ -1152,7 +1376,6 @@
               </div>
             </div>
           </a>
-
           <a href="#cisco-cert" class="certificate-card">
             <img src="assets/img/cisco-cer.png" alt="Cisco Certificate" class="certificate-img">
             <div class="certificate-badge">Verified</div>
@@ -1164,7 +1387,6 @@
               </div>
             </div>
           </a>
-
           <a href="#nptel-cert" class="certificate-card">
             <img src="assets/img/nptel-cee.png" alt="NPTEL Certificate" class="certificate-img">
             <div class="certificate-badge">Verified</div>
@@ -1176,7 +1398,6 @@
               </div>
             </div>
           </a>
-
           <a href="#meta-cert" class="certificate-card">
             <img src="assets/img/meta-cer.png" alt="Meta Certificate" class="certificate-img">
             <div class="certificate-badge">Verified</div>
@@ -1188,7 +1409,6 @@
               </div>
             </div>
           </a>
-
           <a href="#ml-cert" class="certificate-card">
             <img src="assets/img/eict.png" alt="Machine Learning Certificate" class="certificate-img">
             <div class="certificate-badge">Verified</div>
@@ -1201,7 +1421,6 @@
             </div>
           </a>
         </div>
-
         <div class="show-more-section">
           <a href="https://drive.google.com/drive/u/1/folders/1Uw8o3_Dyc8DPXAUy3ri96nlP6PeOIYVO" class="show-more-btn" target="_blank">
             <!-- <img src="assets/img/certificates/all-certificates.jpg" alt="All Certificates" class="show-more-img"> -->
@@ -1211,9 +1430,7 @@
         </div>
       </div>
     </section>
-
   </main>
-
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <h3 class="sitename">Pranavsai Padala</h3>
@@ -1232,13 +1449,10 @@
       </div>
     </div>
   </footer>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
   <!-- Preloader -->
   <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1250,10 +1464,8 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
   <!-- Carousel Script -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1268,13 +1480,10 @@
           prevEl: '.swiper-button-prev',
         },
       };
-
       document.querySelectorAll('.swiper').forEach((element) => {
         new Swiper(element, swiperConfigs);
       });
     });
   </script>
-
 </body>
-
 </html>
